@@ -49,7 +49,7 @@ def two_sum4(nums, target):
         except:
             continue
         if idx != i:
-            return [i, idx]
+            return [idx, i]
 
 
 def two_sum5(nums, target):
@@ -65,7 +65,7 @@ def two_sum5(nums, target):
 
     for i in range(len(nums)):
         if nums[i] in values:
-            return [i, keys[values.index(nums[i])]]
+            return [keys[values.index(nums[i])], i]
         else:
             dict[i] = target - nums[i]
             values = list(dict.values())
