@@ -53,6 +53,13 @@ def two_sum4(nums, target):
 
 
 def two_sum5(nums, target):
+    """
+    Time: O(n) run
+    Space: add O(n) dictionary structure
+    :param nums: a list
+    :param target: target value
+    :return: two list indices, their list values sum to target
+    """
     dict = {}
     values = []
 
