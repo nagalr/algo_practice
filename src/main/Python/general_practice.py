@@ -54,8 +54,7 @@ def two_sum4(nums, target):
 
 def two_sum5(nums, target):
     dict = {}
-    values = list(dict.values())
-    keys = list(dict.keys())
+    values = []
 
     for i in range(len(nums)):
         if nums[i] in values:
