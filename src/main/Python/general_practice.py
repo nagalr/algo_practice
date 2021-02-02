@@ -1,10 +1,13 @@
+import time
+
+
 def two_sum(nums, target):
-    result = set()
+    result = []
     for i in range(len(nums)):
         for j in range(len(nums)):
             if i != j and nums[i] + nums[j] == target:
-                result.add(i)
-                result.add(j)
+                result.append(i)
+                result.append(j)
                 return result
 
     return result
@@ -23,4 +26,15 @@ def two_sum2(nums, target):
     return None
 
 
+# compare the running times of the two methods
+print("***** tme-of-first-method ******")
+t1 = time.time()
+print(two_sum([1, 2, 2, 4], 6))
+t2 = time.time()
+print("The time of the first is: " + str((t2 - t1) * 10000))
+
+print("\n***** tme-of-second-method ******")
+t3 = time.time()
 print(two_sum2([1, 2, 2, 4], 6))
+t4 = time.time()
+print("The time of the first is: " + str((t4 - t3) * 10000))
