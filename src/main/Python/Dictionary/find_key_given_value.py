@@ -12,4 +12,5 @@ a = keys[values.index('ddd')]
 # print all
 print(keys)
 print(values)
+
 print('the key of ddd is: ' + str(a))
