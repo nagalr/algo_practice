@@ -1,7 +1,6 @@
 import timeit
 
 
-#
 def two_sum(nums, target):
     for i in range(len(nums)):
         for j in range(len(nums)):
