@@ -42,6 +42,16 @@ def two_sum3(nums, target):
     return None
 
 
+def two_sum4(nums, target):
+    for i in range(len(nums)):
+        try:
+            idx = nums.index(target - nums[i])
+        except:
+            continue
+        if 0 < idx != i:
+            return [i, idx]
+
+
 print("\n***** time-of-first-method ******")
 print(timeit.timeit(str(print(two_sum([1, 11, 1, 11, 1, 2, 2, 2, 2, 44], 4)))))
 
@@ -51,3 +61,5 @@ print(timeit.timeit(str(print(two_sum2([1, 11, 1, 11, 1, 2, 2, 2, 2, 44], 4)))))
 print("\n***** time-of-third-method ******")
 print(timeit.timeit(str(print(two_sum3([1, 11, 1, 11, 1, 2, 2, 2, 2, 44], 4)))))
 
+print("\n***** time-of-third-method ******")
+print(timeit.timeit(str(print(two_sum4([1, 11, 1, 11, 1, 2, 2, 2, 2, 44], 4)))))
