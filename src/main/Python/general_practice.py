@@ -48,7 +48,7 @@ def two_sum4(nums, target):
             idx = nums.index(target - nums[i])
         except:
             continue
-        if 0 < idx != i:
+        if idx != i:
             return [i, idx]
 
 
