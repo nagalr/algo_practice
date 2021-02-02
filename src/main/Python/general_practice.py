@@ -25,7 +25,7 @@ def two_sum2(nums, target):
 
 def two_sum3(nums, target):
     """
-    Time: O(n) run
+    Time: O(n^2) run
     Space: O(n) space-complexity
     :param nums: a list of integers
     :param target: lookup value
