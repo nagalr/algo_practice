@@ -60,7 +60,7 @@ celerybeat.pid
 .env
 .venv
 env/
-venv/
+venv/*
 ENV/
 env.bak/
 venv.bak/
@@ -73,3 +73,7 @@ venv.bak/
 dmypy.json
 .pyre/
 .idea/
+src/main/Python/List/
+src/main/resources/
+src/test/
+pom.xml
