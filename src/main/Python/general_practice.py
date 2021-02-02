@@ -52,14 +52,15 @@ def two_sum4(nums, target):
             return [i, idx]
 
 
-print("\n***** time-of-first-method ******")
-print(timeit.timeit(str(print(two_sum([1, 11, 1, 11, 1, 2, 2, 2, 2, 44], 4)))))
+if __name__ == "__main__":
+    print("\n***** time-of-first-method ******")
+    print(timeit.timeit(str(print(two_sum([1, 11, 1, 11, 1, 2, 2, 2, 2, 44], 4)))))
 
-print("\n***** time-of-second-method ******")
-print(timeit.timeit(str(print(two_sum2([1, 11, 1, 11, 1, 2, 2, 2, 2, 44], 4)))))
+    print("\n***** time-of-second-method ******")
+    print(timeit.timeit(str(print(two_sum2([1, 11, 1, 11, 1, 2, 2, 2, 2, 44], 4)))))
 
-print("\n***** time-of-third-method ******")
-print(timeit.timeit(str(print(two_sum3([1, 11, 1, 11, 1, 2, 2, 2, 2, 44], 4)))))
+    print("\n***** time-of-third-method ******")
+    print(timeit.timeit(str(print(two_sum3([1, 11, 1, 11, 1, 2, 2, 2, 2, 44], 4)))))
 
-print("\n***** time-of-third-method ******")
-print(timeit.timeit(str(print(two_sum4([1, 11, 1, 11, 1, 2, 2, 2, 2, 44], 4)))))
+    print("\n***** time-of-four-method ******")
+    print(timeit.timeit(str(print(two_sum4([1, 11, 1, 11, 1, 2, 2, 2, 2, 44], 4)))))
