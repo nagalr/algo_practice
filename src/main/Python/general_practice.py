@@ -52,6 +52,13 @@ def two_sum4(nums, target):
             return [i, idx]
 
 
+def two_sum5(nums, target):
+    dict = {}
+    for i in range(len(nums)):
+        if target - nums[i] in dict.values():
+            return [i, ]
+
+
 if __name__ == "__main__":
     print("\n***** time-of-first-method ******")
     print(timeit.timeit(str(print(two_sum([1, 11, 1, 11, 1, 2, 2, 2, 2, 44], 4)))))
@@ -64,3 +71,5 @@ if __name__ == "__main__":
 
     print("\n***** time-of-four-method ******")
     print(timeit.timeit(str(print(two_sum4([1, 11, 1, 11, 1, 2, 2, 2, 2, 44], 4)))))
+
+
