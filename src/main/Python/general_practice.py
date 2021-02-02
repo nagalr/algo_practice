@@ -2,15 +2,12 @@ import time
 
 
 def two_sum(nums, target):
-    result = []
     for i in range(len(nums)):
         for j in range(len(nums)):
             if i != j and nums[i] + nums[j] == target:
-                result.append(i)
-                result.append(j)
-                return result
+                return [i, j]
 
-    return result
+    return None
 
 
 def two_sum2(nums, target):
