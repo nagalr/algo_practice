@@ -43,11 +43,11 @@ def two_sum3(nums, target):
 
 
 print("\n***** time-of-first-method ******")
-print(timeit.timeit(str(
-    print(two_sum([1, 11, 1, 11, 1, 2, 2, 2, 2, 44], 4)))))
+print(timeit.timeit(str(print(two_sum([1, 11, 1, 11, 1, 2, 2, 2, 2, 44], 4)))))
+
 print("\n***** time-of-second-method ******")
-print(timeit.timeit(str(
-    print(two_sum2([1, 11, 1, 11, 1, 2, 2, 2, 2, 44], 4)))))
+print(timeit.timeit(str(print(two_sum2([1, 11, 1, 11, 1, 2, 2, 2, 2, 44], 4)))))
+
 print("\n***** time-of-third-method ******")
-print(timeit.timeit(str(
-    print(two_sum3([1, 11, 1, 11, 1, 2, 2, 2, 2, 44], 4)))))
+print(timeit.timeit(str(print(two_sum3([1, 11, 1, 11, 1, 2, 2, 2, 2, 44], 4)))))
+
