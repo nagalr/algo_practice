@@ -14,7 +14,7 @@ def bubble_sort(coll: list):
 def bubble_sort_optimize(coll: list):
     """
     Optimized version of bubble-sort.
-    At any iteration, if the list is ordered, there is no swap.
+    At any iteration, if the list ordered, there is no swap.
     If there was no swap, the algorithm finishes.
     Time O(n^2) run in the worst case, O(n) for ordered input.
     O(1) space complexity.

@@ -1,5 +1,5 @@
 def minimumLoss(price):
-    i, j = price[0], price[len(price) - 1]
+    i, j = 0, len(price) - 1
     min_loss = 100000  # inf-figure
     while i < j:
         if 0 < price[i] - price[j] < min_loss:
