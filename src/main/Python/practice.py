@@ -20,17 +20,25 @@ def max_area(height):
 
 
 def max_area2(height):
+    """
+    Time O(n) run
+    Space O(1) not using accessory structure
+    :param height: a list
+    :return: max water capacity between two lines
+    """
     i, j = 0, len(height) - 1
-    water = 0
+    max_capacity = 0
     while i < j:
-        water = max(water, (j - i) * min(height[i], height[j]))
+        max_capacity = max(max_capacity, (j - i) * min(height[i], height[j]))
         if height[i] < height[j]:
             i += 1
         else:
             j -= 1
-    return water
+
+    return max_capacity
 
 
 l = [1, 8, 6, 2, 5, 14, 8, 3, 7, 8]
-l2 = [1,2,1]
-print(max_area2(l2))
+l2 = [1, 2, 1]
+l3 = [1, 8, 6, 2, 5]
+print(max_area2(l3))
