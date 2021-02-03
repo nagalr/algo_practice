@@ -37,7 +37,7 @@ def two_sum3(nums, target):
         if target - nums[i] in nums:
             idx = nums.index(target - nums[i])
             if i != idx:
-                return [i, idx]
+                return [idx, i]
 
     return None
 
@@ -104,4 +104,4 @@ if __name__ == "__main__":
     print(timeit.timeit(str(print(two_sum5([1, 11, 1, 11, 1, 2, 2, 2, 2, 44], 4)))))
 
     print("\n***** time-of-six-method ******")
-    print(timeit.timeit(str(print(two_sum6([1, 11, 1, 11, 1, 2, 2, 2, 2, 44], 44)))))
+    print(timeit.timeit(str(print(two_sum6([1, 11, 1, 11, 1, 2, 2, 2, 2, 44], 4)))))
