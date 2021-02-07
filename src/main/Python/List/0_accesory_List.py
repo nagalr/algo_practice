@@ -5,7 +5,7 @@ class ListNode:
     def __init__(self, val=0, next=None):
         self.val = val
         self.next = next  # only for Doubly-List
-        self.prev = None
+        # self.prev = None
 
     def __repr__(self):  # 'toString' Impl
         return repr(self.val)
@@ -19,7 +19,7 @@ def print_list(head):
         result.append(repr(curr))  # using ListNode 'repr'
         curr = curr.next
 
-    print('[' + ', '.join(result) + ']')
+    return '[' + ', '.join(result) + ']'
 
 
 # reveres a List in-place, changes the List
