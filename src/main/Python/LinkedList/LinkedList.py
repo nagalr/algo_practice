@@ -49,13 +49,12 @@ class SinglyLinkedList:
             prev.next = curr.next
             curr.next = None
 
-    def reverse(head):
+    def reverse(self):
         """
         Reverse the list in-place.
         Takes O(n) time.
-        Return the head od the revered list
         """
-        curr = head
+        curr = self.head
         prev = None
         next = None
 
@@ -65,20 +64,4 @@ class SinglyLinkedList:
             prev = curr
             curr = next
 
-        return prev
-
-# testing
-Node1 = ListNode(1)
-Node2 = ListNode(2)
-Node3 = ListNode(3)
-Node4 = ListNode(4)
-Node5 = ListNode(5)
-
-head = Node1
-Node1.next = Node2
-Node2.next = Node3
-Node3.next = Node4
-Node4.next = Node5
-Node5.next = None
-
-print(head.next.next)
+        self.head = prev
