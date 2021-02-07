@@ -65,3 +65,6 @@ class SinglyLinkedList:
             curr = next
 
         self.head = prev
+
+# ALL the methods are within the class,
+# to remove them, remove the 'self'
