@@ -30,7 +30,7 @@ def reverse(head):
     next = None
 
     while curr:
-        next = curr.next,
+        next = curr.next
         curr.next = prev
         prev = curr
         curr = next
@@ -47,3 +47,24 @@ def reverse(head):
 # a full-copy can be done with only one code-line. (plus the import)
 head = ListNode(0, None)  # some item
 my_head = copy.deepcopy(head)
+
+
+# testing
+Node1 = ListNode(1)
+Node2 = ListNode(2)
+Node3 = ListNode(3)
+Node4 = ListNode(4)
+Node5 = ListNode(5)
+
+head = Node1
+Node1.next = Node2
+Node2.next = Node3
+Node3.next = Node4
+Node4.next = Node5
+Node5.next = None
+
+print(print_list(head))
+
+print(print_list(reverse(head)))
+
+
