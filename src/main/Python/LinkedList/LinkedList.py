@@ -11,7 +11,7 @@ class SinglyLinkedList:
     def __init__(self):
         self.head = None
 
-    def __repr__(self):  # 'toString' Impl
+    def __repr__(self):  # 'toString' Impl, for 'print'
         result = []
         curr = self.head
         while curr:
@@ -66,8 +66,11 @@ class SinglyLinkedList:
 
         self.head = prev
 
+
 # ALL the methods are within the class,
 # to remove them, remove the 'self'
+# locate them outside the class-scope,
+# and test to see if working
 
 # testing
 # testing
@@ -84,5 +87,18 @@ Node3.next = Node4
 Node4.next = Node5
 Node5.next = None
 
+a = SinglyLinkedList()
+a.append(Node1)
+a.append(Node2)
+a.append(Node3)
+a.append(Node4)
+a.append(Node5)
 
+print(a)  # [1,2,3,4,5]
+a.reverse()
+print(a)  # [5,4,3,2,1]
 
+a.remove(Node2)
+print(a)  # [5, 4, 3, 1] - removes Node2
+
+print(type(a))  # <class '__main__.SinglyLinkedList'>
