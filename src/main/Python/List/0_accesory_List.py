@@ -24,10 +24,6 @@ def print_list(head):
 
 # reveres a List in-place, changes the List
 def reverse(head):
-    """
-    Reverse the list in-place.
-    Takes O(n) time.
-    """
     my_head = head
     curr = head
     prev = None
