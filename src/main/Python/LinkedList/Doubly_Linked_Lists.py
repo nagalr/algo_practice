@@ -128,3 +128,44 @@ class DoublyLinkedList:
             curr_node = next_node
 
         self.head = prev_node
+
+
+def print_list(head):  # returns list of the LinkedList values
+    result = []
+    curr = head
+    while curr:
+        result.append(repr(curr))  # using ListNode 'repr'
+        curr = curr.next
+
+    return '[' + ', '.join(result) + ']'
+
+
+# testing
+Node1 = ListNode(1)
+Node2 = ListNode(2)
+Node3 = ListNode(3)
+Node4 = ListNode(4)
+Node5 = ListNode(5)
+
+head = Node1
+Node1.next = Node2
+Node2.next = Node3
+Node3.next = Node4
+Node4.next = Node5
+Node5.next = None
+
+# prev definitions (for doubly-list)
+Node1.prev = None
+Node2.prev = Node1
+Node3.prev = Node2
+Node4.prev = Node3
+Node5.prev = Node4
+
+print(print_list(head))
+
+doubly = DoublyLinkedList()
+
+doubly.head = head
+doubly.reverse()
+
+print(doubly)
