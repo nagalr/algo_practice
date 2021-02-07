@@ -18,7 +18,8 @@ def print_list(head):
     while curr:
         result.append(repr(curr))  # using ListNode 'repr'
         curr = curr.next
-    return '[' + ', '.join(result) + ']'
+
+    print('[' + ', '.join(result) + ']')
 
 
 # reveres a List in-place, changes the List
@@ -33,17 +34,16 @@ def reverse(head):
     next = None
 
     while curr:
-        next = curr.next
+        next = curr.next,
         curr.next = prev
         prev = curr
         curr = next
 
     my_head = prev
-
     return my_head
 
 
-# full-copy of a List by a full-copy of the head,
+# full-copy of a p by a full-copy of the head,
 # all other-items of the List will be fully-copied as-well.
 # given 'head' of a List, 'my_head' will be a head of a full-copy
 # of the List. (it was checked by me many times)
