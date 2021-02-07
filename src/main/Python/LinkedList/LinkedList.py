@@ -64,7 +64,7 @@ class SinglyLinkedList:
             prev = curr
             curr = next
 
-        self.head = prev
+        self.head = prev  # prev it the new head
 
 
 # ALL the methods are within the class,
