@@ -61,6 +61,11 @@ def reverse(head, m, n):
 
 
 def reverse2(head, m, n):
+    """
+    Reverse a sub-LinkedList in-place, between indexes m to n
+    Time O(n) Run, 1 pass
+    Space O(1) no accessory structure
+    """
     if m == n:
         return head
     curr = head
