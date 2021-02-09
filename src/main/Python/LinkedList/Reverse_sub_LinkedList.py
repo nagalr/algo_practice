@@ -83,13 +83,13 @@ def reverse2(head, m, n):
         curr = next
         i += 1
 
+    # the pointers within the reversed sub-list changed within the 'while',
+    # the pointers before and after will be defined in the code below.
     #  at the end of this 'while':
-    # 'prev' will be the last item to be reversed, hence first after reversing,
+    # 'prev' will be the last item to be reversed, first after reversing,
     # hence, first_node will point on it.
     # 'curr' will be the first item after the reversal portion,
     # hence, last_node will point on it.
-    # the pointers within the reversed sub-list changed within the 'while',
-    # the pointers before and after will be defined below.
 
     if first_node is not None:  # linking this node with the first node of reversed list
         first_node.next = prev
