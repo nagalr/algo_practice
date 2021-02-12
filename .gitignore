@@ -133,3 +133,6 @@ dmypy.json
 !/src/main/Python/Practice/
 !/src/main/Python/Practice/practice.py
 /src/main/Python/Practice/
+!/src/main/Python/0_useful_operations/
+src/main/Python/0_useful_operations/
+
