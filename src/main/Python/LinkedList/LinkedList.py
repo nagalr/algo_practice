@@ -102,3 +102,4 @@ a.remove(Node2)
 print(a)  # [5, 4, 3, 1] - removes Node2
 
 print(type(a))  # <class '__main__.SinglyLinkedList'>
+
