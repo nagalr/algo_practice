@@ -3,8 +3,8 @@ import shutil
 from os import listdir
 from os.path import isdir
 
-dry_run = False #  change to True to get a log of what will be removed
-m2_path = '/Users/ronnen/.m2/repository/' #  here comes your repo path
+dry_run = False  # change to True to get a log of what will be removed
+m2_path = '/Users/ronnen/.m2/repository/'  # here comes your repo path
 version_regex = '^\d[.\d]*$'
 
 
